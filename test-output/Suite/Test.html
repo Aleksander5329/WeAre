@@ -1,0 +1,1810 @@
+<html>
+<head>
+<title>TestNG:  Test</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Test</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/39</td>
+</tr><tr>
+<td>Started on:</td><td>Mon Jan 24 17:07:16 EET 2022</td>
+</tr>
+<tr><td>Total time:</td><td>0 seconds (111 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-failed'>
+<tr><td colspan='4' align='center'><b>FAILED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='extentReport.ExtentReport.startReport()'><b>startReport</b><br>Test class: extentReport.ExtentReport</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace311239812", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace311239812'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>-1643036836</td>
+<td>extentReport.ExtentReport@3835c46</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.SearchTest.tearDown()'><b>tearDown</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.PostsTest.tearDown()'><b>tearDown</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.SearchTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.ValidRegistrationTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.ValidRegistrationTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ValidRegistrationTest@20deea7f</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.PostsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.SearchTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.tearDown()'><b>tearDown</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.SearchTest.tearDown()'><b>tearDown</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.PostsTest.tearDown()'><b>tearDown</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.ConnectionsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.ConnectionsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ConnectionsTest@7193666c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.ConnectionsTest.tearDown()'><b>tearDown</b><br>Test class: tests.ConnectionsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ConnectionsTest@7193666c</td></tr>
+<tr>
+<td title='tests.PostsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.ValidRegistrationTest.tearDown()'><b>tearDown</b><br>Test class: tests.ValidRegistrationTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ValidRegistrationTest@20deea7f</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.PostsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.SignInTest.tearDown()'><b>tearDown</b><br>Test class: tests.SignInTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SignInTest@20ce78ec</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.tearDown()'><b>tearDown</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='extentReport.ExtentReport.tearDown()'><b>tearDown</b><br>Test class: extentReport.ExtentReport</td>
+<td></td>
+<td>-1643036836</td>
+<td>extentReport.ExtentReport@3835c46</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.tearDown()'><b>tearDown</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.PostsTest.tearDown()'><b>tearDown</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.PostsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.ValidRegistrationTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.ValidRegistrationTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ValidRegistrationTest@20deea7f</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.SearchTest.tearDown()'><b>tearDown</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.SearchTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.SignInTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.SignInTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SignInTest@20ce78ec</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.SearchTest.tearDown()'><b>tearDown</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.PostsTest.tearDown()'><b>tearDown</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.ConnectionsTest.tearDown()'><b>tearDown</b><br>Test class: tests.ConnectionsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ConnectionsTest@7193666c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.ConnectionsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.ConnectionsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ConnectionsTest@7193666c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.ValidRegistrationTest.tearDown()'><b>tearDown</b><br>Test class: tests.ValidRegistrationTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ValidRegistrationTest@20deea7f</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.ConnectionsTest.tearDown()'><b>tearDown</b><br>Test class: tests.ConnectionsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ConnectionsTest@7193666c</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.tearDown()'><b>tearDown</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.PostsTest.tearDown()'><b>tearDown</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.SearchTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.ValidRegistrationTest.tearDown()'><b>tearDown</b><br>Test class: tests.ValidRegistrationTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ValidRegistrationTest@20deea7f</td></tr>
+<tr>
+<td title='tests.SearchTest.tearDown()'><b>tearDown</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.SignInTest.tearDown()'><b>tearDown</b><br>Test class: tests.SignInTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SignInTest@20ce78ec</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.SearchTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.ValidRegistrationTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.ValidRegistrationTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ValidRegistrationTest@20deea7f</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.tearDown()'><b>tearDown</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.ConnectionsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.ConnectionsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.ConnectionsTest@7193666c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.SearchTest.tearDown()'><b>tearDown</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.SignInTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.SignInTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SignInTest@20ce78ec</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.PostsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.PostsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.SearchTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.SearchTest.tearDown()'><b>tearDown</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.SearchTest.openBrowser()'><b>openBrowser</b><br>Test class: tests.SearchTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.EditProfileTest.tearDown()'><b>tearDown</b><br>Test class: tests.EditProfileTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.tearDown()'><b>tearDown</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td></td>
+<td>-1643036836</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+</table><p>
+<table width='100%' border='1' class='invocation-skipped'>
+<tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='tests.ValidRegistrationTest.validRegistrtion()'><b>validRegistrtion</b><br>Test class: tests.ValidRegistrationTest<br>Parameters: UniqueUser, Unique@email.si, 123456, 123456</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace525968792", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace525968792'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.ValidRegistrationTest@20deea7f</td></tr>
+<tr>
+<td title='tests.PostsTest.editPost()'><b>editPost</b><br>Test class: tests.PostsTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1878169648", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1878169648'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.SearchTest.searchAllUsers()'><b>searchAllUsers</b><br>Test class: tests.SearchTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace726379593", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace726379593'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.openRegPage()'><b>openRegPage</b><br>Test class: tests.RegistrationErrorsTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1170727939", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1170727939'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.invalidAveilability()'><b>invalidAveilability</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1491755116", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1491755116'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.SearchTest.openProfilePage()'><b>openProfilePage</b><br>Test class: tests.SearchTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace555273695", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace555273695'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.SearchTest.searchByProfesion()'><b>searchByProfesion</b><br>Test class: tests.SearchTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1730704097", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1730704097'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.PostsTest.addPost()'><b>addPost</b><br>Test class: tests.PostsTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1748876332", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1748876332'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.SearchTest.searchUser()'><b>searchUser</b><br>Test class: tests.SearchTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1995250556", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1995250556'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.SearchTest.nonExistingProfesion()'><b>nonExistingProfesion</b><br>Test class: tests.SearchTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2089016471", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2089016471'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.EditProfileTest.threeLetterFirstName()'><b>threeLetterFirstName</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1550261631", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1550261631'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.EditProfileTest.birthDayFuture()'><b>birthDayFuture</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace279593458", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace279593458'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.EditProfileTest.updateServices()'><b>updateServices</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace758119607", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace758119607'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.SearchTest.searchNonExistingUser()'><b>searchNonExistingUser</b><br>Test class: tests.SearchTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1050065615", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1050065615'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.EditProfileTest.nonLeapYear()'><b>nonLeapYear</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1840903588", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1840903588'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.notMatchingPass()'><b>notMatchingPass</b><br>Test class: tests.RegistrationErrorsTest<br>Parameters: UserTwo, test2@email.si, 123, 123456</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace402115881", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace402115881'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.PostsTest.deletePost()'><b>deletePost</b><br>Test class: tests.PostsTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace793138072", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace793138072'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.EditProfileTest.changeProfession()'><b>changeProfession</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace931675031", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace931675031'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.ConnectionsTest.addFriend()'><b>addFriend</b><br>Test class: tests.ConnectionsTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1977310713", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1977310713'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.ConnectionsTest@7193666c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.longFirstName()'><b>longFirstName</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace249034932", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace249034932'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.EditProfileTest.editProfile()'><b>editProfile</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace391630194", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace391630194'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.userAlreadyExists()'><b>userAlreadyExists</b><br>Test class: tests.RegistrationErrorsTest<br>Parameters: UniqueUser, Unique@email.si, 123456, 123456</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1725008249", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1725008249'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.SearchTest.searchUserByPartialName()'><b>searchUserByPartialName</b><br>Test class: tests.SearchTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1647766367", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1647766367'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.SearchTest@393671df</td></tr>
+<tr>
+<td title='tests.EditProfileTest.threeLetterLasttName()'><b>threeLetterLasttName</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace239372207", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace239372207'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.aler()'><b>aler</b><br>Test class: tests.RegistrationErrorsTest<br>Parameters: UniqueUser, Unique@email.si, 123456, 123456</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1966124444", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1966124444'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.uploadPrivatePhoto()'><b>uploadPrivatePhoto</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1661406123", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1661406123'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.PostsTest.viewPost()'><b>viewPost</b><br>Test class: tests.PostsTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace220309324", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace220309324'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.ConnectionsTest.removeFriend()'><b>removeFriend</b><br>Test class: tests.ConnectionsTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1781493632", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1781493632'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.ConnectionsTest@7193666c</td></tr>
+<tr>
+<td title='tests.ValidRegistrationTest.assertPageNavigated()'><b>assertPageNavigated</b><br>Test class: tests.ValidRegistrationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1278852808", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1278852808'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.ValidRegistrationTest@20deea7f</td></tr>
+<tr>
+<td title='tests.PostsTest.openProfilePage()'><b>openProfilePage</b><br>Test class: tests.PostsTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1007412025", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1007412025'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.PostsTest@7714e963</td></tr>
+<tr>
+<td title='tests.SignInTest.SignIn()'><b>SignIn</b><br>Test class: tests.SignInTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1778629809", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1778629809'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.SignInTest@20ce78ec</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.invalidEmail()'><b>invalidEmail</b><br>Test class: tests.RegistrationErrorsTest<br>Parameters: UniqueUser, Unique@email.si, 123456, 123456</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1606304070", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1606304070'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.uploadImgMoreThanOneMb()'><b>uploadImgMoreThanOneMb</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1112414583", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1112414583'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.ValidRegistrationTest.openRegPage()'><b>openRegPage</b><br>Test class: tests.ValidRegistrationTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace945722724", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace945722724'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.ValidRegistrationTest@20deea7f</td></tr>
+<tr>
+<td title='tests.ConnectionsTest.openProfilePage()'><b>openProfilePage</b><br>Test class: tests.ConnectionsTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1525409936", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1525409936'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.ConnectionsTest@7193666c</td></tr>
+<tr>
+<td title='tests.RegistrationErrorsTest.shortPass()'><b>shortPass</b><br>Test class: tests.RegistrationErrorsTest<br>Parameters: UserTwo, test2@email.si, 1, 1</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace361398902", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace361398902'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.RegistrationErrorsTest@654f0d9c</td></tr>
+<tr>
+<td title='tests.EditProfileTest.uploadPhoto()'><b>uploadPhoto</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2012744708", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace2012744708'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.EditProfileTest.openprofilePage()'><b>openprofilePage</b><br>Test class: tests.EditProfileTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1955920234", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1955920234'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.EditProfileTest@1dde4cb2</td></tr>
+<tr>
+<td title='tests.SignInTest.openRegPage()'><b>openRegPage</b><br>Test class: tests.SignInTest</td>
+<td><div><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+... Removed 21 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace391877669", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace391877669'><pre>org.testng.TestNGException: 
+Parameter &apos;OS&apos; is required by BeforeTest on method startReport but has not been marked @Optional or defined
+in C:\Users\SnuSnu\Desktop\WeAre\testng12.xml
+	at org.testng.internal.Parameters.createParams(Parameters.java:270)
+	at org.testng.internal.Parameters.createParametersForMethod(Parameters.java:358)
+	at org.testng.internal.Parameters.createParameters(Parameters.java:700)
+	at org.testng.internal.Parameters.createConfigurationParameters(Parameters.java:168)
+	at org.testng.internal.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:302)
+	at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:637)
+	at org.testng.TestRunner.beforeRun(TestRunner.java:627)
+	at org.testng.TestRunner.run(TestRunner.java:589)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:377)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:371)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:332)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:276)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:53)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:96)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1212)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1134)
+	at org.testng.TestNG.runSuites(TestNG.java:1063)
+	at org.testng.TestNG.run(TestNG.java:1031)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+</pre></div></td>
+<td>0</td>
+<td>tests.SignInTest@20ce78ec</td></tr>
+</table><p>
+</body>
+</html>

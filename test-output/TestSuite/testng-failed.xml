@@ -1,0 +1,161 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="2" parallel="tests" name="Failed suite [TestSuite]" guice-stage="DEVELOPMENT">
+  <listeners>
+    <listener class-name="listeners.Listener"/>
+  </listeners>
+  <test thread-count="2" parallel="tests" name="ChromeTests(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.PostsTest">
+        <methods>
+          <include name="openProfilePage"/>
+          <include name="tearDown"/>
+          <include name="addPost"/>
+          <include name="openBrowser"/>
+          <include name="editPost"/>
+          <include name="deletePost"/>
+          <include name="viewPost"/>
+        </methods>
+      </class> <!-- tests.PostsTest -->
+      <class name="tests.EditProfileTest">
+        <methods>
+          <include name="uploadPhoto"/>
+          <include name="editProfile"/>
+          <include name="threeLetterFirstName"/>
+          <include name="updateServices"/>
+          <include name="invalidAveilability"/>
+          <include name="nonLeapYear"/>
+          <include name="uploadImgMoreThanOneMb"/>
+          <include name="longFirstName"/>
+          <include name="birthDayFuture"/>
+          <include name="tearDown"/>
+          <include name="changeProfession"/>
+          <include name="uploadPrivatePhoto"/>
+          <include name="openBrowser"/>
+          <include name="openprofilePage"/>
+          <include name="threeLetterLasttName"/>
+        </methods>
+      </class> <!-- tests.EditProfileTest -->
+      <class name="tests.ConnectionsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="addFriend"/>
+          <include name="openBrowser"/>
+          <include name="removeFriend"/>
+          <include name="openProfilePage"/>
+        </methods>
+      </class> <!-- tests.ConnectionsTest -->
+      <class name="tests.RegistrationErrorsTest">
+        <methods>
+          <include name="notMatchingPass"/>
+          <include name="aler"/>
+          <include name="shortPass"/>
+          <include name="tearDown"/>
+          <include name="openRegPage"/>
+          <include name="userAlreadyExists"/>
+          <include name="openBrowser"/>
+          <include name="invalidEmail"/>
+        </methods>
+      </class> <!-- tests.RegistrationErrorsTest -->
+      <class name="tests.SearchTest">
+        <methods>
+          <include name="openProfilePage"/>
+          <include name="searchAllUsers"/>
+          <include name="tearDown"/>
+          <include name="searchByProfesion"/>
+          <include name="nonExistingProfesion"/>
+          <include name="openBrowser"/>
+          <include name="searchUser"/>
+          <include name="searchUserByPartialName"/>
+          <include name="searchNonExistingUser"/>
+        </methods>
+      </class> <!-- tests.SearchTest -->
+      <class name="tests.SignInTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SignIn"/>
+          <include name="openBrowser"/>
+          <include name="openRegPage"/>
+        </methods>
+      </class> <!-- tests.SignInTest -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+  <test thread-count="2" parallel="tests" name="FirefoxTest(failed)">
+    <parameter name="browser" value="firefox"/>
+    <classes>
+      <class name="tests.PostsTest">
+        <methods>
+          <include name="openProfilePage"/>
+          <include name="tearDown"/>
+          <include name="addPost"/>
+          <include name="openBrowser"/>
+          <include name="editPost"/>
+          <include name="deletePost"/>
+          <include name="viewPost"/>
+        </methods>
+      </class> <!-- tests.PostsTest -->
+      <class name="tests.EditProfileTest">
+        <methods>
+          <include name="uploadPhoto"/>
+          <include name="editProfile"/>
+          <include name="threeLetterFirstName"/>
+          <include name="updateServices"/>
+          <include name="invalidAveilability"/>
+          <include name="nonLeapYear"/>
+          <include name="uploadImgMoreThanOneMb"/>
+          <include name="longFirstName"/>
+          <include name="birthDayFuture"/>
+          <include name="tearDown"/>
+          <include name="changeProfession"/>
+          <include name="uploadPrivatePhoto"/>
+          <include name="openBrowser"/>
+          <include name="openprofilePage"/>
+          <include name="threeLetterLasttName"/>
+        </methods>
+      </class> <!-- tests.EditProfileTest -->
+      <class name="tests.ConnectionsTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="addFriend"/>
+          <include name="openBrowser"/>
+          <include name="removeFriend"/>
+          <include name="openProfilePage"/>
+        </methods>
+      </class> <!-- tests.ConnectionsTest -->
+      <class name="tests.RegistrationErrorsTest">
+        <methods>
+          <include name="notMatchingPass"/>
+          <include name="aler"/>
+          <include name="shortPass"/>
+          <include name="tearDown"/>
+          <include name="openRegPage"/>
+          <include name="userAlreadyExists"/>
+          <include name="openBrowser"/>
+          <include name="invalidEmail"/>
+        </methods>
+      </class> <!-- tests.RegistrationErrorsTest -->
+      <class name="tests.SearchTest">
+        <methods>
+          <include name="openProfilePage"/>
+          <include name="searchAllUsers"/>
+          <include name="tearDown"/>
+          <include name="searchByProfesion"/>
+          <include name="nonExistingProfesion"/>
+          <include name="openBrowser"/>
+          <include name="searchUser"/>
+          <include name="searchUserByPartialName"/>
+          <include name="searchNonExistingUser"/>
+        </methods>
+      </class> <!-- tests.SearchTest -->
+      <class name="tests.SignInTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="SignIn"/>
+          <include name="openBrowser"/>
+          <include name="openRegPage"/>
+        </methods>
+      </class> <!-- tests.SignInTest -->
+    </classes>
+  </test> <!-- FirefoxTest(failed) -->
+</suite> <!-- Failed suite [TestSuite] -->
